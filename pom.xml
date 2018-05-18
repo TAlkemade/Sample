@@ -4,9 +4,9 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.codebind</groupId>
+  <groupId>com.amistest</groupId>
   <artifactId>my-maven-project</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <name>my-maven-project</name>
   <!-- FIXME change it to the project's website -->
@@ -43,12 +43,26 @@
   <releases>  
    <enabled>true</enabled>  
   </releases>  
-
   <snapshots>  
    <enabled>true</enabled>  
   </snapshots>  
  </repository>  
 </repositories>  
+
+<!-- download plugins from this repo -->  
+<pluginRepositories>  
+ <pluginRepository>  
+  <id>localnexus</id>  
+  <name>nexustest</name>  
+  <url>http://localhost:8081</url>  
+  <releases>  
+   <enabled>true</enabled>  
+  </releases>  
+  <snapshots>  
+   <enabled>true</enabled>  
+  </snapshots>  
+ </pluginRepository>  
+</pluginRepositories>  
 	
   <dependencies>
     <dependency>
